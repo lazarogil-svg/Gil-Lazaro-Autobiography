@@ -1,0 +1,225 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gil Jr. D. Lazaro - Biography</title>
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      background-color: #f8f1e7;
+      color: #3e2f1c;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      text-align: center;
+      background-color: #a97458;
+      color: white;
+      padding: 25px 0;
+      font-size: 24px;
+      letter-spacing: 1px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    main {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 10px;
+    }
+
+    /* Box/Accordion Styling */
+    .section {
+      background-color: #e7d3bf;
+      border: 2px solid #b68a66;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    }
+
+    .section h2 {
+      margin: 0;
+      padding: 18px;
+      font-size: 20px;
+      background-color: #b68a66;
+      color: white;
+      cursor: pointer;
+      position: relative;
+      transition: background-color 0.3s ease;
+    }
+
+    .section h2:hover {
+      background-color: #a97458;
+    }
+
+    .section h2::after {
+      content: '+';
+      position: absolute;
+      right: 20px;
+      font-weight: bold;
+      transition: transform 0.3s ease;
+    }
+
+    .section.active h2::after {
+      content: '−';
+      transform: rotate(180deg);
+    }
+
+    .content {
+      padding: 15px 20px;
+      display: none;
+      background-color: #f5ece3;
+      line-height: 1.6;
+      animation: fadeIn 0.3s ease;
+    }
+
+    .section.active .content {
+      display: block;
+    }
+
+    ul {
+      list-style-type: disc;
+      margin-left: 25px;
+    }
+
+    img {
+      width: 100%;
+      max-width: 288px;
+      border-radius: 10px;
+      margin-top: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      object-fit: cover;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #a97458;
+      color: white;
+      font-size: 14px;
+      margin-top: 40px;
+      box-shadow: 0 -4px 8px rgba(0,0,0,0.1);
+    }
+
+    .center {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Gil Jr. D. Lazaro</h1>
+    <p>Personal Biography</p>
+  </header>
+
+  <main>
+    <!-- ABOUT -->
+    <div class="section">
+      <h2>ABOUT</h2>
+      <div class="content">
+        <p><strong>Name:</strong> Gil Jr. D. Lazaro</p>
+        <p><strong>Birthday:</strong> August 2, 2006</p>
+        <p><strong>Age:</strong> 19</p>
+        <p><strong>Address:</strong> Proper Mactan, Lapu-Lapu City, Cebu City</p>
+        <p><strong>Nationality:</strong> Filipino</p>
+        <div class="center">
+          <img src="c:\Users\Gaming\Downloads\pic1.jpg" alt="Profile Photo">
+        </div>
+      </div>
+    </div>
+
+    <!-- SCHOOL BACKGROUND -->
+    <div class="section">
+      <h2>SCHOOL BACKGROUND</h2>
+      <div class="content">
+        <p><strong>Elementary:</strong> Mactan Elementary School</p>
+        <p><strong>Junior High School:</strong> Mactan National High School</p>
+        <p><strong>Senior High School:</strong> Sto. Niño Montessori School</p>
+        <p><strong>College:</strong> Currently studying at Lapu-Lapu City College.</p>
+        <p>Focused on improving knowledge in technology and computer systems.</p>
+      </div>
+    </div>
+
+    <!-- HOBBIES AND INTERESTS -->
+    <div class="section">
+      <h2>HOBBIES AND INTERESTS</h2>
+      <div class="content">
+        <ul>
+          <li>I enjoy exploring technology such as using HTML, CSS, and JavaScript.
+            I enjoy exploring technology such as using HTML, CSS, and JavaScript because it allows me to be creative while building something meaningful. Through these tools, I can design and develop websites that are not only functional but also visually appealing. Learning how each language works together.
+          </li>
+          <li>
+            Playing sports like badminton, volleyball, and baseball.
+            <br><em>I play badminton because it’s a fun and active sport that helps me stay fit and healthy. It also improves my speed, focus, and coordination. Playing with friends and family keeps me competitive and relieves stress.</em>
+            <div class="center">
+              <img src="c:\Users\Gaming\Downloads\badminton.jpg" alt="Badminton Photo">
+            </div>
+          </li>
+          <li>
+            Listening to music and learning instruments like guitar, drums, and bass.
+            <br><em>I want to play guitar because it allows me to express my creativity and emotions through music. It also helps me relax and focus, and I love the feeling of improving every time I learn a new chord or song.</em>
+            <div class="center">
+              <img src="c:\Users\Gaming\Downloads\guitar.jpg" alt="Guitar Photo">
+            </div>
+          </li>
+          <li>
+            Doing physical activities.
+            <br><em>I want to engage in physical activities such as exercise, running, and jogging because they contribute to maintaining a healthy body and mind. Regular physical activity improves endurance, strengthens muscles, and enhances mental well-being.</em>
+          </li>
+          <li>Seeking challenges is important because it helps a person grow and discover their full potential. When we face challenges, we step out of our comfort zone and learn new skills that make us stronger and more confident. Challenges also teach us how to handle failure, adapt to difficult situations, and develop problem-solving skills. They encourage us to think creatively and find ways to overcome obstacles. Most importantly, taking on challenges brings us closer to our goals and reminds us that we are capable of achieving more than we believe.
+        </ul>
+      </div>
+    </div>
+
+    <!-- FAMILY BACKGROUND -->
+    <div class="section">
+      <h2>FAMILY BACKGROUND</h2>
+      <div class="content">
+        <p><strong>Father’s Name:</strong> Gil A. Lazaro Sr.</p>
+        <p><strong>Mother’s Name:</strong> Elvira D. Lazaro</p>
+
+        <p><strong>Sisters:</strong></p>
+        <ul>
+          <li>Gerlie D. Lazaro</li>
+          <li>Joana D. Lazaro</li>
+          <li>Erika D. Lazaro</li>
+        </ul>
+
+        <p><strong>Brothers:</strong></p>
+        <ul>
+          <li>Raffy Dihayco</li>
+          <li>Glenn D. Lazaro</li>
+        </ul>
+
+        <div class="center">
+          <img src="c:\Users\Gaming\Downloads\famPic.png" alt="Family Photo" style="max-width:550px;">
+          <p style="font-size:14px; color:#5a4030;">MY BELOVED FAMILY💕</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>“BE BETTER THAN YOU WERE YESTERDAY.”</p>
+  </footer>
+
+  <script>
+    const sections = document.querySelectorAll('.section');
+    sections.forEach(section => {
+      section.querySelector('h2').addEventListener('click', () => {
+        section.classList.toggle('active');
+      });
+    });
+  </script>
+
+</body>
+</html>
